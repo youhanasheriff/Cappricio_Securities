@@ -648,7 +648,7 @@ footer > .left , .center , .right {
 .copy-creator {
     padding: 15px 0;
     font-size: 11px;
-    background-color: #242b3a;
+    background-color: hsla(120, 100%, 4%, 0.733);
     color: white;
     text-align: center;
 }
