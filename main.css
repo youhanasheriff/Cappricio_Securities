@@ -3693,7 +3693,7 @@ padding: 0 1rem;
 .copy-creator {
 padding: 15px 0;
 font-size: 11px;
-background-color: #242b3a;
+background-color: hsla(120, 100%, 0.4%, 0.83);
 color: white;
 text-align: center;
 }
