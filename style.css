@@ -579,11 +579,12 @@ html {
 .security-service-content div:hover{
     transform: scale(1.05);
 }
-.security-service-content div p{
+.security-service-content div p a{
     color: var(--dark-primary);
     font-weight: 700;
+    text-decoration: none;
 }
-.security-service-content div:hover p{
+.security-service-content div:hover p a{
     color: var(--dark-theme-color);
     z-index: 99;
     opacity: 1;
