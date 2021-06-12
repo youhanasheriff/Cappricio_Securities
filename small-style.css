@@ -1,0 +1,185 @@
+.wrapper{
+    height: 90vh;
+}
+header {
+    position: static; 
+}
+.logo {
+    justify-content: space-around;
+    width: 80%;
+}
+.logo img{
+    width: 65px;
+    height: 65px;
+}
+.logo h1 {
+    font-size: 1rem;
+}
+.nav-bar {
+    position: absolute;
+    right: 0;
+    top: 90px;
+    height: 76vh;
+    background-color: var(--primary);
+    -webkit-box-shadow: 0px 4px 6px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 6px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 6px -3px rgba(0,0,0,0.75);
+    z-index: 999;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 500ms ease-in;
+}
+.nav-active {
+    transform: translateX(0%) !important;
+}
+.nav-bar ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 80%;
+}
+.nav-bar ul li{
+    opacity: 0;
+}
+@keyframes navLinks {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.mode{
+    position: relative;
+    inset: 0;
+    margin: 15%;
+    opacity: 0;
+}
+.burger-menu{
+    display: block;
+}
+.burger-menu div{
+    width: 25px;
+    height: 3px;
+    background-color: var(--dark-primary);
+    margin: 5px;
+}
+.content {
+    justify-content: space-between;
+    padding: 2rem 3rem 0;
+    margin-top:0;
+}
+.text {
+    width: 90%;
+    padding: .5rem;
+}
+.text p {
+    line-height: 1.8rem;
+    font-size: 18px;
+    margin: 20px 0;
+}
+.text a{
+    padding: 15px 25px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+.text a::before {
+    width: 45px;
+    height: 45px;
+}
+.image {
+    display: none;
+}
+.wave, .wave::before, .wave::after {
+    bottom: 0px;
+}
+.services {
+    top: 0px;
+    height:  max-content;
+}
+.head-text {
+    top: 60px;
+    margin-bottom: 75px;
+}
+.services-content {
+    display: block;
+    height: max-content;
+    padding-bottom: 25px;
+}
+.services-content div {
+    padding-bottom: 20px;
+}
+.services-display{
+    height: 190vh;
+}
+.security-service-content {
+    transform: translateY(2rem)
+    scale(.9);
+}
+footer {
+    flex-direction: column;
+    height: max-content;
+    padding: 20px 0;
+}
+footer > .left , .center , .right {
+    padding: 1rem 0;
+}
+.fcontent {
+    text-align: center;
+}
+.fcontent h3 {
+    margin: .7rem 0 ;
+}
+footer .left p , footer .right p , footer .right a{
+    padding: .5rem 0;
+}
+.right-content div a {
+    margin: 0 5px;
+}
+
+
+@media screen and (max-width: 340px) {
+    .content {
+        justify-content: space-between;
+        padding: 50px 25px 0;
+    }
+    .text {
+        width: 100%;
+    }
+    .text p {
+        line-height: 1.2rem;
+    }
+    .text a{
+        padding: 10px 15px;
+        letter-spacing: 1px;
+    }
+    .text a::before {
+        width: 35px;
+        height: 35px;
+    }
+    .image {
+        display: none;
+    }
+    .wrapper {
+        height: 90vh;
+    }
+    .wave, .wave::before, .wave::after {
+        bottom: 0px;
+    }
+    .security-service-content {
+        transform: translateY(4rem)
+        scale(.9);
+    }
+    .copy-creator {
+        padding: 15px 10px;
+        letter-spacing: 0.3px;
+        line-height: 17px;
+    }
+}

@@ -1,5 +1,3 @@
-
-
 const modeBtn = document.querySelector(".mode");
 
 modeBtn.addEventListener("click", ()=>{
@@ -24,6 +22,23 @@ modeBtn.addEventListener("click", ()=>{
     }
 })
 
+//nav bar
+const navSlide = ()=>{
+    const burger = document.querySelector('.burger-menu');
+    const nav = document.querySelector('.nav-bar');
+    const navLinks = document.querySelectorAll('.nav-bar ul li');
+
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+        navLinks.forEach((link,index)=>{
+            link.style.animation = `navLinks 500ms ease forwards ${index /7 + 0.4}s`
+        })
+        modeBtn.style.animation =`modeSlide 500ms ease forwards 800ms`
+    });
+
+    
+}
+navSlide();
 
 //carousel
 const carouselSlide = document.querySelector(".carousel-slide")
