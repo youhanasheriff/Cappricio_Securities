@@ -15,7 +15,7 @@
     --hex-background: #25FF2530;
     --text-color:black;
     --tl-content-backgroud:#2323;
-    --content-shadow:#ffffffb3;
+    --content-shadow:#000000b3;
     --timeline-background:#5471541F; /*#282828 #5471541F*/
 }
 
@@ -278,16 +278,6 @@ header ul li a:hover {
     background-repeat: no-repeat;
     cursor: pointer;
     transition: background-image 800ms ease;
-}
-@keyframes modeSlide {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-    }
 }
 .mode.active {
     background-image: url(./images/svgs/dark_mode_black_24dp.svg);
@@ -695,7 +685,6 @@ footer > .left , .center , .right {
 }
 .img-holder img {
     width: 100%;
-    padding: auto;
 }
 
 .p-holder {
@@ -771,13 +760,13 @@ footer > .left , .center , .right {
     position: relative;
     min-width: 250px;
     max-width: 600px;
-    right: 6rem;
+    right: 5.5rem;
     margin: 2rem;
     background-color: var(--tl-content-backgroud);
     padding: 1.5rem;
-    -webkit-box-shadow: 0px 0px 12px 0px var(--content-shadow);
-    -moz-box-shadow: 0px 0px 12px 0px var(--content-shadow);
-     box-shadow: 0px 0px 12px 0px var(--content-shadow);
+    -webkit-box-shadow: 0px 0px 5px 0px var(--content-shadow);
+    -moz-box-shadow: 0px 0px 5px 0px var(--content-shadow);
+     box-shadow: 0px 0px 5px 0px var(--content-shadow);
 }
 .timeline-content::before{
     position: absolute;

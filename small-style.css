@@ -19,18 +19,21 @@ header {
     position: absolute;
     right: 0;
     top: 90px;
-    height: 76vh;
+    height: 75vh;
     background-color: var(--primary);
     -webkit-box-shadow: 0px 4px 6px -3px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 4px 6px -3px rgba(0,0,0,0.75);
     box-shadow: 0px 4px 6px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 1px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 1px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: -2px 1px 2px 0px rgba(0,0,0,0.75);
     z-index: 999;
     width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    transform: translateX(100%);
+    transform: translateX(120%);
     transition: transform 500ms ease-in;
 }
 .nav-active {
@@ -62,6 +65,16 @@ header {
     margin: 15%;
     opacity: 0;
 }
+@keyframes modeSlide {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
 .burger-menu{
     display: block;
 }
@@ -70,6 +83,16 @@ header {
     height: 3px;
     background-color: var(--dark-primary);
     margin: 5px;
+    transition: all 500ms ease;
+}
+.toggle .line1{
+    transform:rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform:rotate(45deg) translate(-5px, -6px);
 }
 .content {
     justify-content: space-between;
@@ -144,6 +167,46 @@ footer .left p , footer .right p , footer .right a{
     margin: 0 5px;
 }
 
+/* ----------------------------------Service Page----------------------------------------------------------------------- */
+.service-head {
+    flex-direction: column;
+    height: max-content;
+}
+.img-holder {
+    padding: 0;
+}
+.p-holder {
+    width: 100%;
+    text-align: center;
+    line-height: 1.5rem;
+}
+.p-holder h2::after , h2::before {
+    position: relative;
+    display: inline-block;
+    content: '';
+    background-color: var(--main-theme-color);
+    bottom: -5px;
+    transform: translateX(-7px);
+    height: 3px;
+    width: 4rem;
+    border-radius:7px;
+}
+
+/* TIMELINE HEAD */
+.service-timeline {
+    padding: 1rem;
+}
+.timeline-head {
+    padding: 1rem;
+    
+    text-align: center;
+}
+.timelines::after, .timeline-content::before{
+    display: none;
+}
+.timelines .timeline-content {
+    right: 0;
+}
 
 @media screen and (max-width: 340px) {
     .content {

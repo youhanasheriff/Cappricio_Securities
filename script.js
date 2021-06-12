@@ -28,12 +28,21 @@ const navSlide = ()=>{
     const nav = document.querySelector('.nav-bar');
     const navLinks = document.querySelectorAll('.nav-bar ul li');
 
+    const ifState = (element, stringProperty)=>{
+        if(element.style.animation){
+            element.style.animation = '';
+        }else{
+            element.style.animation = stringProperty;
+        }
+    }
+
     burger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
         navLinks.forEach((link,index)=>{
-            link.style.animation = `navLinks 500ms ease forwards ${index /7 + 0.4}s`
+            ifState(link,`navLinks 500ms ease forwards ${index /7 + 0.4}s`);
         })
-        modeBtn.style.animation =`modeSlide 500ms ease forwards 800ms`
+        ifState(modeBtn,`modeSlide 500ms ease forwards 800ms`);
+        burger.classList.toggle('toggle');
     });
 
     
