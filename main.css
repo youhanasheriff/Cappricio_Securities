@@ -96,6 +96,7 @@ box-sizing: inherit;
 body {
 background: var(--primary);
 font-family: 'Montserrat', sans-serif;
+overflow-y:hidden;
 }
 
 
