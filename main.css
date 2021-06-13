@@ -96,7 +96,6 @@ box-sizing: inherit;
 body {
 background: var(--primary);
 font-family: 'Montserrat', sans-serif;
-overflow-y:hidden;
 }
 
 
@@ -3678,9 +3677,12 @@ font-weight: bold;
 /* ---------------------- responsive ----------------------- */
 
 @media screen and (max-width: 940px) {
+	body {
+		overflow-x: hidden;
+	}
 	.header {
 		position: static; 
-		padding: 20px 50px;
+		padding: 20px 20px;
 	}
 	.logo {
 		justify-content: space-around;
@@ -3689,6 +3691,7 @@ font-weight: bold;
 	.logo img{
 		width: 65px;
 		height: 65px;
+		top: 0;
 	}
 	.logo h1 {
 		font-size: 16px;
