@@ -267,7 +267,7 @@ header ul li a:hover {
     cursor: pointer;
 }
 .mode {
-    background-image: url(./images/svgs/light_mode_black_24dp.svg);
+    background-image: url(../images/svgs/light_mode_black_24dp.svg);
     height: 24px;
     width: 24px;
     position: absolute;
@@ -280,7 +280,7 @@ header ul li a:hover {
     transition: background-image 800ms ease;
 }
 .mode.active {
-    background-image: url(./images/svgs/dark_mode_black_24dp.svg);
+    background-image: url(../images/svgs/dark_mode_black_24dp.svg);
 }
 
 .image {
@@ -343,7 +343,7 @@ header ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(./images/wave.png) repeat-x;
+    background: url(../images/wave.png) repeat-x;
     background-size: cover;
     background-position:-1000px 0;
     opacity: .3;
@@ -361,7 +361,7 @@ header ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(./images/wave.png) repeat-x;
+    background: url(../images/wave.png) repeat-x;
     background-size: cover;
     background-position:2732px 0;
     opacity: .4;
@@ -770,7 +770,7 @@ footer > .left , .center , .right {
 }
 .timeline-content::before{
     position: absolute;
-    content: url(./images/svgs/big_arrow.svg);
+    content: url(../images/svgs/big_arrow.svg);
     scale: .2;
     right: 22%;
 }
