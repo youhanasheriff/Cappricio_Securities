@@ -1,5 +1,23 @@
-const modeBtn = document.querySelector(".mode");
+const last = document.getElementById('consultancy');
+const first = document.getElementById('security-services');
 
+const divs = document.querySelector('.carousel-slide');
+
+const lastClone = last.cloneNode(true);
+const firstClone = first.cloneNode(true);
+
+firstClone.id = "firstClone";
+lastClone.id = "lastClone";
+
+let pos = divs.firstElementChild;
+
+divs.insertBefore(lastClone, pos);
+divs.appendChild(firstClone);
+
+
+
+const modeBtn = document.querySelector(".mode");
+ 
 modeBtn.addEventListener("click", ()=>{
     modeBtn.classList.toggle("active");
     if (modeBtn.className !== "mode active"){
@@ -90,3 +108,4 @@ carouselSlide.addEventListener('transitionend', () =>{
         carouselSlide.style.transform = 'translateX(' + (-size*counter) + 'px)';
     }
 });
+
