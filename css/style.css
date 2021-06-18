@@ -771,8 +771,10 @@ footer > .left , .center , .right {
 .timeline-content::before{
     position: absolute;
     content: url(../images/svgs/big_arrow.svg);
-    scale: .2;
-    right: 22%;
+    /* scale: .2;
+    --webkit-scale: .2; */
+    right: 104%;
+    top: 46%;   
 }
 .timeline-content h3{
     font-size: 1.3rem;
